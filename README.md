@@ -10,9 +10,10 @@ V adresári `notes` sa nachádzajú latex súbory rozdelené odpovedajúcej adre
 Pomocou pribaleného `Makefile` priamo v projekte. \
 Stačí použiť príkazy ako: 
 ```
-make [pres_(CISLOPREZENTACIE)]
+make [NAME=(pres[1-8])]
 make all
 make merged
  ```
+
 Prezentácie sa potom skompilované budú nachádzať v adresári 
 `notes/out`

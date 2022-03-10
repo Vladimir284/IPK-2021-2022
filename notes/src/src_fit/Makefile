@@ -1,15 +1,16 @@
-all:
+all: hint
 
-# TO-DO
-# Regular expresions
+hint:
+	@echo "Wrong calling, use make hint to view usage"
+
 clean:
-	rm -f pres_{0-9}.aux
-	rm -f pres_{}.log
-	rm -f pres_{}.nav
-	rm -f pres_{}.out
-	rm -f pres_{}.snm
-	rm -f pres_{}.toc
-	rm -f pres_{}.pdf
+	rm -f pres_[1-8].aux
+	rm -f pres_[1-8].log
+	rm -f pres_[1-8].nav
+	rm -f pres_[1-8].out
+	rm -f pres_[1-8].snm
+	rm -f pres_[1-8].toc
+	rm -f pres_[1-8].pdf
 
 pres1: clean
 	pdflatex ../pres_1/pres_1.tex
