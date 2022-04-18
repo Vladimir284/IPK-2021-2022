@@ -1,0 +1,188 @@
+\documentclass[10pt,xcolor=pdflatex,hyperref={unicode}]{beamer}
+\usepackage{newcent}
+\usepackage[utf8]{inputenc}
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+
+% Added for compilation for current project
+\usetheme{FIT}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[IPK Zhrnutie]{Úvod}
+
+\author[]{}
+
+\institute[]{Brno University of Technology, Faculty of Information Technology\\
+Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+login@fit.vutbr.cz}
+
+%\institute[]{Fakulta informačních technologií
+%Vysokého učení technického v Brně\\
+%Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+%login@fit.vutbr.cz}
+
+% Neskor vyberiem
+%\date{January 1, 2016}
+\date{\today}
+%\date{} % bez data / without date
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    \frame[plain]{\titlepage}
+
+%    \begin{frame}\frametitle{Frame Title}
+%    Example \emph{content}.
+%    \end{frame}
+
+
+    \section{Internet}
+    \begin{frame}
+        \frametitle{WAN}
+        \begin{itemize}
+            \item Wide area network
+            \item Počítačová sieť pokrývajúca rozľahlé geografické územie
+        \end{itemize}
+    \end{frame}
+
+
+    \section{Komunikácia}
+    \section{Pripojenie k ISP}
+    \begin{frame}
+        \frametitle{ISP}
+        \begin{itemize}
+            \item Internet service provider
+            \item Poskytovaťeľ internetu :D, Telekom O2, Slovanet, UPC ...
+        \end{itemize}
+    \end{frame}
+
+
+    \begin{frame}
+        \frametitle{Domáce siete}
+        \emph{SOHO}
+        \begin{itemize}
+            \item Small office, home office
+            \item Lacné sieťové zariadenia
+        \end{itemize}
+        \emph{ADSL}
+        \begin{itemize}
+            \item Asymmetric Digital Subscriber Line
+            \item Nerovnomerné rozdelenie príjmu a odovzdaní dát
+        \end{itemize}
+        \emph{FTTH}
+        \begin{itemize}
+            \item Fiber to the home
+            \item Optické pripojenie domácnosti k internetu
+        \end{itemize}
+        \emph{NAT}
+        \begin{itemize}
+            \item Network address translation
+            \item Preklad adries pre presmerovanie toku dát
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Modem}
+        \begin{itemize}
+            \item Modulator-demodulator
+            \item Prevádza digitány signál do vyších vrstiev, povoluje pripojenie zariadenia do fzyickej vrstvy
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{FDM}
+        \begin{itemize}
+            \item Frequency-division multiplexing
+            \item Spojenie viacerých frekvecíí do jednej
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{LTE}
+        \begin{itemize}
+            \item Long term evolution
+            \item Štandard pre bezdrôtovú, širokopásmovú, dátovú komunikáciu
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{GSM}
+        \begin{itemize}
+            \item Global system for mobile comunication
+            \item Preklad asi nie je potrebný :)
+        \end{itemize}
+    \end{frame}
+
+
+    \section{Domáca sieť}
+    \begin{frame}
+        \frametitle{Ethernet}
+        \begin{itemize}
+            \item Spôsob prepojovania viacerých zariadení do lokálnej siete
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Wifi}
+        \begin{itemize}
+            \item Terminus technikus
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{TDM}
+        \begin{itemize}
+            \item Time division multiplexing
+            \item Spojenie viacerých komunikačných kanálov do jedného rozlíšované na základe časovej synchronizácie
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Bonding}
+        \begin{itemize}
+            \item Spájanie
+            \item Spojenie viacerých kanálov do jedného
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Paket}
+        \begin{itemize}
+            \item Malý segment väčšej správy
+        \end{itemize}
+    \end{frame}
+
+
+    \section{Štruktúra internetu}
+    \begin{frame}
+        \emph{NAP}
+        \begin{itemize}
+            \item Network acces point
+            \item Bod pripojenia na internet
+        \end{itemize}
+        \emph{IXP}
+        \begin{itemize}
+            \item Interet exchange point
+            \item Kde sa stretáva viacero ISP
+        \end{itemize}
+    \end{frame}
+
+    \section{Oneskorenie, strata a prepustnosť}
+    \begin{frame}\frametitle{Model TCP/IP}
+    \begin{itemize}
+        \item Layer 5 - Application layer - Aplikačná vrstva - Komunikácia medzi aplikáciami
+        \item Layer 4 - Transport layer - Transportná vrstva
+        \item Layer 3 - Network - Sieťová vrstva
+        \item Layer 2 - Link - Linková vrstva
+        \item Layer 1 - Physical - Fyzická vrstva - Komunikácia medzi fyzickýi zariadeniami
+    \end{itemize}
+    \end{frame}
+
+
+    \bluepage{Thank You For Your Attention !}
+
+\end{document}
