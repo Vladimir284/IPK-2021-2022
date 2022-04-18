@@ -1,0 +1,126 @@
+\documentclass[10pt,xcolor=pdflatex,hyperref={unicode}]{beamer}
+\usepackage{newcent}
+\usepackage[utf8]{inputenc}
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+
+% Added for compilation for current project
+\usetheme{FIT}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[IPK Zhrnutie]{Úvod}
+
+\author[]{}
+
+\institute[]{Brno University of Technology, Faculty of Information Technology\\
+Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+login@fit.vutbr.cz}
+
+%\institute[]{Fakulta informačních technologií
+%Vysokého učení technického v Brně\\
+%Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+%login@fit.vutbr.cz}
+
+% Neskor vyberiem
+%\date{January 1, 2016}
+\date{\today}
+%\date{} % bez data / without date
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    \frame[plain]{\titlepage}
+
+    \begin{frame}
+        \frametitle{Pripojenia}
+        \emph{TCP}
+        \begin{itemize}
+            \item Transmission control protocol
+            \item Najpoužívanejší protokol na prenos dát
+        \end{itemize}
+        \emph{UDP}
+        \begin{itemize}
+            \item User datagram protocol
+            \item Nedáva záruku na datagramy
+        \end{itemize}
+    \end{frame}
+    \begin{frame}
+        \frametitle{HTTP(S)}
+        \begin{itemize}
+            \item Hyper text transform protocol (secured)
+            \item Prepojenie medzi servrom a PC
+            \item Správy HTTP request a HTTP response
+        \end{itemize}
+        \emph{Perzistetné spojenie}
+        \begin{itemize}
+            \item Použitie TCP protokolu pre posielanie viacerých HTTP správ
+            \item Spojenie sa uzatvorí po každej odoslanej správe, takto sa spojenie uzatvorí až po odoslaní
+            poslednej správy zo sady správ
+        \end{itemize}
+        \emph{Pipelineing}
+        \begin{itemize}
+            \item Posielanie viacero HTTP správ cez jedno TCP spojenie
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Cookies}
+        \begin{itemize}
+            \item Časť HTTP správy odoslaná servru obsahujúca informácie o klientovi
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{HTTP authentication}
+        \begin{itemize}
+            \item Výzva klientovi k autentifikácii poskytnutím špecifických informácií
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{E-mail a protokoly}
+        \emph{SMTP}
+        \begin{itemize}
+            \item Single mail transfer protocol
+        \end{itemize}
+        \emph{POP3}
+        \begin{itemize}
+            \item Post office protokol
+            \item Používaný na sťahovanie e-mail správ zo vzdialeného servru na klienta
+        \end{itemize}
+        \emph{IMAP}
+        \begin{itemize}
+            \item Internet message access protocol
+            \item Vzdialený prístup k správam cez klienta
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}\frametitle{DNS}
+        \begin{itemize}
+            \item Domain name service
+            \item Používa DNS protokol
+            \item Systém domén použícaný na prevod domén a IP adries
+        \end{itemize}
+        \emph{DNS Rezolúcia}
+        \begin{itemize}
+            \item IP Adresy sú preložené na domény
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}\frametitle{Socket}
+        \begin{itemize}
+            \item Koncový bod priponenia cez internet
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Frame Title}
+        Example \emph{content}.
+    \end{frame}
+
+    \bluepage{Thank You For Your Attention !}
+
+\end{document}

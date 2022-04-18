@@ -10,7 +10,15 @@ hint:
 
 pres:
 	cd notes/src/src_fit && $(MAKE) $(TARGET)
-	open notes/out/$(TARGET).pdf -a Preview
+	# open notes/out/$(TARGET).pdf -a Preview # MacOs
+	evince notes/out/$(TARGET).pdf # Ubuntu
+
+clean:
+	cd notes/src/src_fit && $(MAKE) clean
+
+clean_all:
+	rm -rf notes/out
+	mkdir notes/out
 
 # TO-DO
 # merged
