@@ -1,0 +1,90 @@
+\documentclass[10pt,xcolor=pdflatex,hyperref={unicode}]{beamer}
+\usepackage{newcent}
+\usepackage[utf8]{inputenc}
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+
+% Added for compilation for current project
+\usetheme{FIT}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[IPK Zhrnutie]{IPV6}
+
+\author[]{Vladimír Mečiar}
+
+\institute[]{Brno University of Technology, Faculty of Information Technology\\
+Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+login@fit.vutbr.cz}
+
+%\institute[]{Fakulta informačních technologií
+%Vysokého učení technického v Brně\\
+%Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+%login@fit.vutbr.cz}
+
+% Neskor vyberiem
+%\date{January 1, 2016}
+\date{\today}
+%\date{} % bez data / without date
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    \frame[plain]{\titlepage}
+
+    \begin{frame}
+        \frametitle{Unicast address}
+        \emph{GRP}
+        \begin{itemize}
+            \item Global routing prefix
+        \end{itemize}
+        \emph{SID}
+        \begin{itemize}
+            \item Subnet ID
+        \end{itemize}
+        \emph{IID}
+        \begin{itemize}
+            \item Interface ID
+        \end{itemize}
+        \emph{ULA}
+        \begin{itemize}
+            \item Universal local address
+        \end{itemize}
+        \emph{MA}
+        \begin{itemize}
+            \item Multicast address
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}
+        \frametitle{NDP Messages}
+        Neighbour discovery protocol \\
+        \emph{RA}
+        \begin{itemize}
+            \item Router advertisement
+        \end{itemize}
+        \emph{RS}
+        \begin{itemize}
+            \item Router solicitation
+        \end{itemize}
+        \emph{NS}
+        \begin{itemize}
+            \item Neighbour solicitation
+        \end{itemize}
+        \emph{NA}
+        \begin{itemize}
+            \item Neighbour advertisement
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{MLD}
+       \begin{itemize}
+           \item Multicast listener dicovery
+       \end{itemize}
+    \end{frame}
+
+
+\end{document}
