@@ -1,0 +1,110 @@
+\documentclass[10pt,xcolor=pdflatex,hyperref={unicode}]{beamer}
+\usepackage{newcent}
+\usepackage[utf8]{inputenc}
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+
+% Added for compilation for current project
+\usetheme{FIT}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[IPK Zhrnutie]{Transportná vrstva}
+
+\author[]{Vladimír Mečiar}
+
+\institute[]{Brno University of Technology, Faculty of Information Technology\\
+Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+login@fit.vutbr.cz}
+
+%\institute[]{Fakulta informačních technologií
+%Vysokého učení technického v Brně\\
+%Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+%login@fit.vutbr.cz}
+
+% Neskor vyberiem
+%\date{January 1, 2016}
+\date{\today}
+%\date{} % bez data / without date
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    \frame[plain]{\titlepage}
+
+    \begin{frame}
+        \frametitle{RFC}
+        \begin{itemize}
+            \item Request for comment
+            \item Špecifikácie a štandardy internetu
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{RDT}
+        \begin{itemize}
+            \item reliable data transfer
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{GBN}
+        \begin{itemize}
+            \item Go back N
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{TCP SEQ, ACK, ISN, MSL, MSS čísla}
+        SEQ číslo
+        \begin{itemize}
+            \item Sequence, číslo prvého B odoslaného segmentu
+        \end{itemize}
+        ACK číslo
+        \begin{itemize}
+            \item Acknowledgement, číslo prvého bytu očakávaného segmentu k prijatiu
+        \end{itemize}
+        ISN číslo
+        \begin{itemize}
+            \item Initial sequence number, unikátne číslo alokácie sekvencie čísel
+        \end{itemize}
+        MSL číslo
+        \begin{itemize}
+            \item Maximum Segment Lifetime
+        \end{itemize}
+        MSS
+        \begin{itemize}
+            \item Maximum segment size
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{RTT, SRTT}
+        \begin{itemize}
+            \item (Sample) round trip time, dobra trvania sieťového požiadavku trvajúca od modoslania k príjmu požiadavku
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Príznaky TCP}
+        URG
+        \begin{itemize}
+            \item Urgent, dáta na spracovanie majú prednosť na TCP stack-u
+        \end{itemize}
+        PSH
+        \begin{itemize}
+            \item Push, dáta by mali ísť okamžite do aplikácie a nie do VP
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{AIMD}
+        \begin{itemize}
+            \item Additive increase, Multiplicative decrease
+            \item Odosielateľ zdvíha rýchlosť odosielania lineárne, v prípade straty zníži rýchlosť na polovicu
+        \end{itemize}
+    \end{frame}
+
+\end{document}

@@ -1,0 +1,113 @@
+\documentclass[10pt,xcolor=pdflatex,hyperref={unicode}]{beamer}
+\usepackage{newcent}
+\usepackage[utf8]{inputenc}
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+
+% Added for compilation for current project
+\usetheme{FIT}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[IPK Zhrnutie]{IPV4}
+
+\author[]{Vladimír Mečiar}
+
+\institute[]{Brno University of Technology, Faculty of Information Technology\\
+Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+login@fit.vutbr.cz}
+
+%\institute[]{Fakulta informačních technologií
+%Vysokého učení technického v Brně\\
+%Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+%login@fit.vutbr.cz}
+
+% Neskor vyberiem
+%\date{January 1, 2016}
+\date{\today}
+%\date{} % bez data / without date
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    \frame[plain]{\titlepage}
+
+    \begin{frame}
+        \frametitle{TTL}
+        \begin{itemize}
+            \item Time to live
+            \item Dec pri každom odslaní a keď = 0 tak sa paket zahodí
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{MTU}
+        \begin{itemize}
+            \item Maximum transision unit
+            \item Maximálna veľkosť IP datagramu ktorú vie zariadenie odoslať
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{VLSM}
+        \begin{itemize}
+            \item Variable length subnet mask
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{CIDR}
+        \begin{itemize}
+            \item Classles interdomain routing
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Správa adresného priestoru}
+        Prideľovanie ip priestoru \\
+        \emph{RIR}
+        \begin{itemize}
+            \item Regional Ingernet registries
+        \end{itemize}
+        \emph{NIR}
+        \begin{itemize}
+            \item National Internet registries
+        \end{itemize}
+        \emph{LIR}
+        \begin{itemize}
+            \item Local Internet registries
+        \end{itemize}
+        \emph{ISP} \\
+        \emph{EU}
+        \begin{itemize}
+            \item End users
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{ICANN}
+        \begin{itemize}
+            \item Internet Corporation for Assigned Names and Numbers
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{ICMP}
+        \begin{itemize}
+            \item Internet control message protocol
+            \item Používaný hosťami, oznamovanie chýb smerovači
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{DHCP}
+        \begin{itemize}
+            \item Dynamic host configuration protocol
+            \item Mechanizmus prideľovania IP adries a TCP/IP parametrov
+        \end{itemize}
+
+    \end{frame}
+
+\end{document}

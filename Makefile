@@ -8,10 +8,20 @@ hint:
 	@echo "make all"
 	@echo "make merged"
 
-pres:
+pres: clean
 	cd notes/src/src_fit && $(MAKE) $(TARGET)
-	# open notes/out/$(TARGET).pdf -a Preview # MacOs
-	evince notes/out/$(TARGET).pdf # Ubuntu
+	open notes/out/$(TARGET).pdf -a Preview # MacOs
+	# evince notes/out/$(TARGET).pdf # Ubuntu
+
+pres_all: clean
+	cd notes/src/src_fit && $(MAKE) pres1
+	cd notes/src/src_fit && $(MAKE) pres2
+	cd notes/src/src_fit && $(MAKE) pres3
+	cd notes/src/src_fit && $(MAKE) pres4
+	cd notes/src/src_fit && $(MAKE) pres5
+	cd notes/src/src_fit && $(MAKE) pres6
+	cd notes/src/src_fit && $(MAKE) pres7
+	cd notes/src/src_fit && $(MAKE) pres8
 
 clean:
 	cd notes/src/src_fit && $(MAKE) clean
